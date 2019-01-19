@@ -15,31 +15,26 @@
           <br>
           <form id="survey-form">
             <table>
-              <tr id="name">
-                <td>*Name</td>
-                <td>:</td>
-                <td><input type="text" name="name"/></td>
-              </tr>
-<<<<<<< HEAD
               <tr>
-                  <td>Age</td>
-=======
-              <tr id="email">
-                  <td>*Email</td>
->>>>>>> 3cc83d8acaec73cd3b8fbd825de98869e9acb06e
+                <td><label id="name-label">*Name</label></td>
+                <td>:</td>
+                <td><input type="text" name="name" id="name" required="true" placeholder="Enter Full Name"/></td>
+              </tr>
+              <tr>
+                  <td><label id="email-label">*Email</label></td>
                   <td>:</td>
-                  <td><input type="email" name="email"/></td>
+                  <td><input type="email" name="email"  id="email" required="true" placeholder="Enter Email address"/></td>
                 </tr>
-                <tr id="number">
-                    <td>*Age</td>
+                <tr>
+                    <td><label id="number-label">Age</label></td>
                     <td>:</td>
-                    <td><input type="number" name="age" min="0"/></td>
+                    <td><input type="number"  id="number" name="age" min="0" max="110" placeholder="Enter Your Age in Number"/></td>
                   </tr>
                   <tr>
                       <td>Which one best describes your role ?</td>
                       <td>:</td>
                       <td>
-                        <select name="role">
+                        <select name="role" id="dropdown">
                           <option value="">Select any option from below</option>
                           <option value="Student">Student</option>
                           <option value="Software Developer">Developer</option>
@@ -74,14 +69,10 @@
                             </td>
                           </tr>
 
-<<<<<<< HEAD
           </table>
 
-          <a href="#" class="btn" onclick="clicked()">Print</a>
-=======
-            </table>
+          <input type="submit" id="submit" class="btn" onclick="clicked()" value="Print"/>
           </form>
->>>>>>> 3cc83d8acaec73cd3b8fbd825de98869e9acb06e
         </div>
     </div>
     <script  src="js/index.js"></script>

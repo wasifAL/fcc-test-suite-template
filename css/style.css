@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-.btn{
-    background-color: skyblue;
-    text-decoration: none;
-    padding: 5px 10px;
-    text-align: center;
-=======
+
 body{
     background: skyblue;
     text-align: center;
@@ -17,5 +11,23 @@ body{
     background: #f2f2f2;
     margin: 0 auto;
     text-align: left;
->>>>>>> 3cc83d8acaec73cd3b8fbd825de98869e9acb06e
+}
+.form-wrapper table tr td{
+    padding:15px 0px;
+}
+.form-wrapper table tr td:nth-child(1){
+    text-align: right;
+}
+
+.btn{
+    background-color:darkblue;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    float: right;
+}
+.btn:hover{
+    color: darkblue;
+    background-color: white;
 }

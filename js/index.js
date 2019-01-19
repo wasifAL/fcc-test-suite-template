@@ -34,8 +34,9 @@ function clicked(){
   var age = document.getElementsByName("age")[0].value;
   var role = document.getElementsByName("role")[0].value;
 
-  if(name=="" || name==null){err+="Name can't be blank<br>";}
-  if(email=="" || email==null){err+="Email can't be blank<br>";}
-  if(!(age>0)){err+="Age can't be smaller than 0<br>";}
+  if(name=="" || name==null){err+="Name can't be blank";}
+  if(email=="" || email==null){err+="Email can't be blank";}
+  if(!(age>0)){err+="Age can't be smaller than 0";}
+  alert(err);
 
 }
