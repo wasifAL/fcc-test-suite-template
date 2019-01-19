@@ -9,66 +9,68 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="wrapper">
-        <h1>Survey Form</h1>
+        <h1 id="title">Survey Form</h1>
         <div class="form-wrapper">
-          <p>Let us know if anything needs to be added in microverse course line :</p>
+          <p id="description"Let us know if anything needs to be added in microverse course line :</p>
           <br>
-          <table>
-            <tr>
-              <td>*Name</td>
-              <td>:</td>
-              <td><input type="text" name="name"/></td>
-            </tr>
-            <tr>
-                <td>*Email</td>
+          <form id="survey-form">
+            <table>
+              <tr id="name">
+                <td>*Name</td>
                 <td>:</td>
-                <td><input type="email" name="email"/></td>
+                <td><input type="text" name="name"/></td>
               </tr>
-              <tr>
-                  <td>*Age</td>
+              <tr id="email">
+                  <td>*Email</td>
                   <td>:</td>
-                  <td><input type="number" name="age" min="0"/></td>
+                  <td><input type="email" name="email"/></td>
                 </tr>
-                <tr>
-                    <td>Which one best describes your role ?</td>
+                <tr id="number">
+                    <td>*Age</td>
                     <td>:</td>
-                    <td>
-                      <select name="role">
-                        <option value="">Select any option from below</option>
-                        <option value="Student">Student</option>
-                        <option value="Software Developer">Developer</option>
-                      </select>
-                    </td>
+                    <td><input type="number" name="age" min="0"/></td>
                   </tr>
                   <tr>
-                      <td>*How likely that you're going to recommend microverse to your friends ?</td>
+                      <td>Which one best describes your role ?</td>
                       <td>:</td>
                       <td>
-                        <input type="radio" name="recommendation" value="1"/> Definitely <br>
-                        <input type="radio" name="recommendation" value="0"/> Maybe <br>
-                        <input type="radio" name="recommendation" value="-1"/> Definitely Not<br>
+                        <select name="role">
+                          <option value="">Select any option from below</option>
+                          <option value="Student">Student</option>
+                          <option value="Software Developer">Developer</option>
+                        </select>
                       </td>
                     </tr>
-
                     <tr>
-                        <td>*Things that should be added or improved in future</td>
+                        <td>*How likely that you're going to recommend microverse to your friends ?</td>
                         <td>:</td>
                         <td>
-                          <input type="checkbox" name="suggestion" value="Front-End Development"/> Front-End Development <br>
-                          <input type="checkbox" name="suggestion" value="Back-End Development"/> Back-End Development  <br>
-                          <input type="checkbox" name="suggestion" value="System Software Development"/> System Software Development <br>
-                          <input type="checkbox" name="suggestion" value="Data Science"/> Data Science <br>
+                          <input type="radio" name="recommendation" value="1"/> Definitely <br>
+                          <input type="radio" name="recommendation" value="0"/> Maybe <br>
+                          <input type="radio" name="recommendation" value="-1"/> Definitely Not<br>
                         </td>
                       </tr>
+
                       <tr>
-                          <td>*Any sggestion or comments ? </td>
+                          <td>*Things that should be added or improved in future</td>
                           <td>:</td>
                           <td>
-                           <textarea name="comment"></textarea>
+                            <input type="checkbox" name="suggestion" value="Front-End Development"/> Front-End Development <br>
+                            <input type="checkbox" name="suggestion" value="Back-End Development"/> Back-End Development  <br>
+                            <input type="checkbox" name="suggestion" value="System Software Development"/> System Software Development <br>
+                            <input type="checkbox" name="suggestion" value="Data Science"/> Data Science <br>
                           </td>
                         </tr>
+                        <tr>
+                            <td>*Any sggestion or comments ? </td>
+                            <td>:</td>
+                            <td>
+                            <textarea name="comment"></textarea>
+                            </td>
+                          </tr>
 
-          </table>
+            </table>
+          </form>
         </div>
     </div>
     <script  src="js/index.js"></script>
