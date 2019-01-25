@@ -27,16 +27,3 @@ INSTRUCTIONS:
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
 
-function clicked(){
-  var err="";
-  var name = document.getElementsByName("name")[0].value;
-  var email = document.getElementsByName("email")[0].value;
-  var age = document.getElementsByName("age")[0].value;
-  var role = document.getElementsByName("role")[0].value;
-
-  if(name=="" || name==null){err+="Name can't be blank";}
-  if(email=="" || email==null){err+="Email can't be blank";}
-  if(!(age>0)){err+="Age can't be smaller than 0";}
-  alert(err);
-
-}
