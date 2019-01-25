@@ -9,4 +9,5 @@
      width: 100%;
      position: relative;
  } 
-   }
+}
+#nav-bar > ul{display: flex;}
